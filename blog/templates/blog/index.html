@@ -1,0 +1,15 @@
+
+{% extends 'base_generic.html' %}
+{% block content %}
+  <a class="fcc-btn " href="{% url 'post_new'%}"><h1>+</h1></a>
+  <br>
+  {% for post in posts %}
+    <div class="post-preview">
+      <h2>{{ post.title }}</h2>
+      <a class="a" href="{% url 'post_detail' pk=post.pk %}">ReadMore</a>
+    </div>
+    {% if not forloop.last %}
+      <div class="post-separator"></div>
+    {% endif %}
+  {% endfor %}
+{% endblock %}

@@ -1,0 +1,94 @@
+/* Reset some default styles */
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styling for the pages */
+body {
+  font-family: Arial, sans-serif;
+  background: #333;
+  line-height: 1.6;
+}
+.post-separator {
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.fcc-btn {
+    text-decoration: none;
+    background-color: rgb(159, 153, 146);
+    color: #333;    
+    padding: 5px 6px;
+    float: right;
+  }
+  .fcc-btn1 {
+    text-decoration: none;
+    background-color: rgb(217, 10, 10);
+    color: #fff;    
+    padding: 5px 5px;
+    font-size: 23px;
+  }
+  .form [type=text],textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  .form[type=submit] {
+    background-color: #04AA6D;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .form[type=submit]:hover {
+    background-color: rgb(199, 220, 116);
+  }
+  .fcc-btn2 {
+    text-decoration: none;
+    background-color: rgb(10, 217, 48);
+    color: #fff;    
+    padding: 5px 6px;
+    font-size: 23px;
+  }
+  .a {
+    text-decoration:underline;
+    color: #333;    
+    padding: 5px auto;
+    font-size:13px;
+  }
+.container {
+  max-width: 800px;
+  background-color:floralwhite;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 20px;
+}
+.post-detail{
+  margin-top: 10px;
+  padding: 10 auto;
+  font-family:cursive;
+  color:black;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+h1 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+h1 a:hover {
+  text-decoration: underline;
+}

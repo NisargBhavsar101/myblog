@@ -1,0 +1,22 @@
+{% extends 'base_generic.html' %}
+
+{% block content %}
+  <h1>{% if form.instance.pk %}Edit{% else %}New{% endif %} Post</h1>
+  <form id="postForm" class="form" method="post" action="{% if form.instance.pk %}{% url 'post_edit' pk=form.instance.pk %}{% else %}{% url 'post_new' %}{% endif %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="form" onclick="validateForm()">Post</button>
+  </form>
+  
+  <script>
+    function validateForm() {
+      var title = document.getElementById('id_title').value;
+      var content = document.getElementById('id_content').value;
+      if (!title.trim() || !content.trim()) {
+        alert('Please fill in all fields');
+        return false;
+      }
+      document.getElementById('postForm').submit();
+    }
+  </script>
+{% endblock %}
