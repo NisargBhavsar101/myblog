@@ -1,0 +1,11 @@
+{% extends 'base_generic.html' %}
+
+{% block content %}
+  <article class="post-detail">
+    <h1>{{ post.title }}</h1>
+    <p>{{ post.content }}</p>
+    <h5>{{ post.publication_date|date:"D    H:i" }}</h5>
+  </article>
+  <a class="fcc-btn1" href="{% url 'post_delete' pk=post.pk %}">X</a>
+  <a class="fcc-btn2" href="{% url 'post_edit' pk=post.pk %}">Edit</a>
+{% endblock %}
